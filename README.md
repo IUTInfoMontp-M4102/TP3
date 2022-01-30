@@ -7,7 +7,7 @@ Ce TP est une illustration des applications qui utilisent des calculs distribué
 **Rappels :** Le produit de deux matrices ne peut se définir que si le nombre de colonnes de la première matrice est le même que le nombre de lignes de la deuxième matrice, c’est-à-dire lorsqu’elles sont de tailles compatibles.
 
 Si _A_ = (_a<sub>ij</sub>_) est une matrice de dimensions (_m_, _n_) et _B_ = (_b<sub>ij</sub>_) est une matrice de dimensions (_n_, _p_), alors leur produit, noté _AB_ = (_c<sub>ij</sub>_) est une matrice de dimensions (_m_, _p_) donnée par :
-<div style="text-align: center"><img src="https://latex.codecogs.com/svg.image?\forall i,j, \quad c_{ij} = \sum_{k=1}^{n}a_{ik}b_{kj}" title="produit matrices" /></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.image?\forall&space;i,j,&space;\quad&space;c_{ij}&space;=&space;\sum_{k=1}^{n}a_{ik}b_{kj}" title="produit matrices" /></div>
 
 1. Regardez la classe `Matrix` fournie, qui permet de manipuler des matrices d'entiers.
 
@@ -17,14 +17,14 @@ Le produit de deux matrices peut être calculé _par blocs_ en utilisant la form
 
 Si on considère les matrices
 
-<div style="text-align: center"><img src="https://latex.codecogs.com/svg.image?M = \left(\begin{array}{cc}A&B\\C&D\end{array}\right)\qquad N = \left(\begin{array}{cc}A'&B'\\C'&D'\end{array}\right)" title="produit matrices" /></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.image?M=\left(\begin{array}{cc}A&B\\C&D\end{array}\right)\qquad{}N=\left(\begin{array}{cc}A'&B'\\C'&D'\end{array}\right)" title="produit matrices" /></div>
 
 où _A_, _A'_, _B_, _B'_, _C_, _C'_, _D_ et _D'_ sont des (sous-)matrices telles que
 - le nombre de colonnes de _A_ et _C_ est égal au nombre de lignes de _A'_ et _B'_
 - le nombre de colonnes de _B_ et _D_ est égal au nombre de lignes de _C'_ et _D'_
 
 On a alors le produit
-<div style="text-align: center"><img src="https://latex.codecogs.com/svg.image?M.N = \left(\begin{array}{cc}AA'+BC'&AB'+BD'\\CA'+DC'&CB'+DD'\end{array}\right)" title="produit matrices" /></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.image?M.N=\left(\begin{array}{cc}AA'+BC'&AB'+BD'\\CA'+DC'&CB'+DD'\end{array}\right)" title="produit matrices" /></div>
 
 Cette décomposition permet de calculer le produit de façon distribuée.
 
