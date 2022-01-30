@@ -1,5 +1,7 @@
 # TP3 - Calculs distribués
 
+Lien GitHub Classroom pour [créer un fork privé du TP](https://classroom.github.com/a/leL7eAhq).
+
 Ce TP est une illustration des applications qui utilisent des calculs distribués pour les accélérer.
 
 ## Multiplication de matrices
