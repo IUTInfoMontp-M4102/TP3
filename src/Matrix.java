@@ -79,7 +79,7 @@ final public class Matrix {
         Matrix A = new Matrix(m, n);
         for (int i = 0; i < m; i++)
             for (int j = 0; j < n; j++)
-                A.data[i][j] = (rd.nextInt(-10, 11));
+                A.data[i][j] = rd.nextInt(21) - 10;
         return A;
     }
 
